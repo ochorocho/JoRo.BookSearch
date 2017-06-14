@@ -1,0 +1,83 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+
+<div class="neos-row-fluid book-details">
+    <fieldset class="neos-span5">
+        <legend><f:translate id="headline.details"/> </legend>
+        <div class="neos-control-group">
+            <label class="neos-control-label" for="isbn">
+                <f:translate id="label.isbn" />
+            </label>
+            <div class="neos-controls">
+                {book.isbn}
+            </div>
+        </div>
+        <div class="neos-control-group">
+            <label class="neos-control-label" for="title">
+                <f:translate id="label.title" />
+            </label>
+            <div class="neos-controls">
+                {book.title}
+            </div>
+        </div>
+        <div class="neos-control-group">
+            <label class="neos-control-label" for="categories">
+                <f:translate id="label.categories" />
+            </label>
+            <div class="neos-controls">
+                {book.categories}
+            </div>
+        </div>
+        <div class="neos-control-group">
+            <label class="neos-control-label" for="image-cover">
+                <f:translate id="label.image" />
+            </label>
+            <div class="neos-controls">
+                <img src="{book.image}"/>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="neos-span5 neos-offset1">
+        <legend>&nbsp;</legend>
+        <div class="neos-control-group">
+            <label class="neos-control-label" for="author">
+                <f:translate id="label.author" />
+            </label>
+            <div class="neos-controls">
+                {book.author}
+            </div>
+        </div>
+        <div class="neos-control-group">
+            <label class="neos-control-label" for="language">
+                <f:translate id="label.language" />
+            </label>
+            <div class="neos-controls">
+                {book.language}
+            </div>
+        </div>
+        <div class="neos-control-group">
+            <label class="neos-control-label" for="pages">
+                <f:translate id="label.pages" />
+            </label>
+            <div class="neos-controls">
+                {book.pages}
+            </div>
+        </div>
+        <div class="neos-control-group">
+            <label class="neos-control-label" for="releasedate">
+                <f:translate id="label.releasedate" />
+            </label>
+            <div class="neos-controls">
+                {book.releasedate}
+            </div>
+        </div>
+
+    </fieldset>
+</div>
+
+
+<div class="neos-footer">
+    <neos:link.module class="neos-button neos-button-success" path="management/bookLibrary">
+        <f:translate id="button.back" />
+    </neos:link.module>
+</div>

@@ -1,0 +1,17 @@
+privilegeTargets:
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+    'JoRo.BookSearch:StandardControllerActions':
+      matcher: 'method(JoRo\BookSearch\Controller\StandardController->(index)Action())'
+    'JoRo.BookSearch:BackendModule':
+      matcher: 'method(JoRo\BookSearch\Controller\BackendController->(index|add|create|edit|delete|detail|update)Action())'
+
+roles:
+  'Neos.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'JoRo.BookSearch:StandardControllerActions'
+        permission: GRANT
+
+      -
+        privilegeTarget: 'JoRo.BookSearch:BackendModule'
+        permission: GRANT

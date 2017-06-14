@@ -1,0 +1,44 @@
+.neos.neos-module table td.joro-longtext {
+    line-height: 20px !important;
+    padding: 10px 16px;
+}
+
+.neos-module-management-bookLibrary .center {
+    text-align: center;
+}
+
+.datetimepicker {
+    position: absolute;
+    z-index: 5000;
+}
+
+/* DATETIMEPICKER */
+#ui-datepicker-div {
+    width: auto !important;
+}
+#ui-datepicker-div td {
+    padding: 0 !important;
+}
+
+#ui-datepicker-div table td, #ui-datepicker-div table th {
+    padding-left: 0 !important;
+}
+
+#ui-datepicker-div table td a, #ui-datepicker-div table th {
+    padding-left: 14px !important;
+    padding-right: 8px !important;
+}
+
+.library-table form {
+    display: inline;
+}
+
+.book-details .neos-controls {
+    font-size: 20px !important;
+    border-bottom: 1px solid #3f3f3f;
+    padding-bottom: 0.9rem;
+}
+
+.book-details label {
+    padding-bottom: .5rem;
+}

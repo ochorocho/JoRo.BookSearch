@@ -1,0 +1,23 @@
+Neos:
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          'JoRo.BookSearch': ['*']
+    modules:
+      management:
+        submodules:
+          bookLibrary:
+            label: 'JoRo.BookSearch:Main:module.name'
+            controller: 'JoRo\BookSearch\Controller\BackendController'
+            description: 'JoRo.BookSearch:Main:module.description'
+            icon: 'icon-book'
+            privilegeTarget: 'JoRo.BookSearch:BackendModule'
+            additionalResources:
+              javaScripts:
+                - 'resource://Neos.Neos/Public/Library/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js'
+                - 'resource://JoRo.BookSearch/Public/Javascripts/jquery-ui.min.js'
+                - 'resource://JoRo.BookSearch/Public/Javascripts/datepicker-de.js'
+                - 'resource://JoRo.BookSearch/Public/Javascripts/loadBookDetails.js'
+              styleSheets:
+              - 'resource://JoRo.BookSearch/Public/Styles/Style.css'

@@ -1,0 +1,39 @@
+{namespace form=Neos\Form\ViewHelpers\Form}
+
+<f:widget.paginate objects="{books}" as="paginatedBooks" configuration="{itemsPerPage: 10}">
+
+    <table class="neos-table library-table">
+        <thead>
+        <tr>
+            <th>ISBN</th>
+            <th>Buch Titel</th>
+            <th>&nbsp;</th>
+        </tr>
+        </thead>
+
+        <tbody>
+            <f:for each="{paginatedBooks}" as="book">
+                <tr>
+                    <td>{book.isbn}</td>
+                    <td>{book.title}</td>
+                    <td class="neos-action">
+                        <div class="neos-pull-right">
+
+                            <f:link.action action="detail" arguments="{book: '{book}'}" class="neos-button neos-button-primary" >
+                                <i class="icon-info-sign icon-white"></i>
+                            </f:link.action>
+                            <f:link.action action="edit" arguments="{book: '{book}'}" class="neos-button neos-button-primary" >
+                                <i class="icon-pencil icon-white"></i>
+                            </f:link.action>
+                            <f:form class="book book-delete" action="delete" id="deleteForm" object="{book}" objectName="book" enctype="multipart/form-data">
+                                <button class="neos-button neos-button-danger" type="submit"><i class="icon-trash icon-white"></i></button>
+                            </f:form>
+
+                        </div>
+                    </td>
+                </tr>
+            </f:for>
+        </tbody>
+    </table>
+
+</f:widget.paginate>

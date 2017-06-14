@@ -1,0 +1,57 @@
+'JoRo.BookSearch:Plugin':
+  superTypes:
+    'Neos.Neos:Plugin': TRUE
+  ui:
+    label: 'Book Search'
+    group: 'plugins'
+    icon: icon-map-marker
+    inspector:
+      groups:
+        githubAccount:
+          label: Account
+          position: 1
+        displayCount:
+          label: Display
+          position: 2
+        responsive:
+          label: Responsive
+          position: 2
+  options:
+    pluginViews:
+      ghOptions:
+        label: 'GitHub Tile'
+        controllerActions:
+          JoRo\GithHub\Controller\StandardController: ['index']
+  properties:
+    layout:
+      type: string
+      defaultValue: 'Tile'
+      ui:
+        label: Layout
+        inlineEditable: false
+        inspector:
+          group: displayCount
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              Tile:
+                label: Tile
+              List:
+                label: List
+
+    username:
+      type: string
+      defaultValue: 'GitHub Username'
+      ui:
+        label: Username
+        inlineEditable: false
+        inspector:
+          group: githubAccount
+    token:
+      type: string
+      defaultValue: 'GitHub Auth Token'
+      ui:
+        label: Token
+        inlineEditable: false
+        inspector:
+          group: githubAccount

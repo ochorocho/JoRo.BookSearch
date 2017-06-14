@@ -1,0 +1,19 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "joro/booksearch",
+    "license": "GPL-3.0+",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "JoRo\\BookSearch\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "JoRo.BookSearch"
+        }
+    }
+}

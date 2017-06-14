@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="" product-name="JoRo.BookSearch" source-language="en">
+		<body>
+			<trans-unit id="module.description" xml:space="preserve">
+				<source>Manage Books in your Library</source>
+			</trans-unit>
+			<trans-unit id="module.name" xml:space="preserve">
+				<source>Book Library</source>
+			</trans-unit>
+			<trans-unit id="headline.add" xml:space="preserve">
+				<source>Add Book</source>
+			</trans-unit>
+			<trans-unit id="headline.details">
+				<source>Book details</source>
+			</trans-unit>
+			<trans-unit id="label.isbn" xml:space="preserve">
+				<source>ISBN</source>
+			</trans-unit>
+			<trans-unit id="label.title" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="label.description" xml:space="preserve">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="label.author" xml:space="preserve">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="label.image" xml:space="preserve">
+				<source>Cover image</source>
+			</trans-unit>
+			<trans-unit id="label.language" xml:space="preserve">
+				<source>Language</source>
+			</trans-unit>
+			<trans-unit id="label.categories" xml:space="preserve">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="label.pages">
+				<source>Pages total</source>
+			</trans-unit>
+			<trans-unit id="label.releasedate" xml:space="preserve">
+				<source>Release Date</source>
+			</trans-unit>
+			<trans-unit id="button.cancel" xml:space="preserve">
+				<source>Cancel</source>
+			</trans-unit>
+	        <trans-unit id="button.create">
+                <source>Create</source>
+            </trans-unit>
+			<trans-unit id="button.update">
+				<source>Update</source>
+			</trans-unit>
+			<trans-unit id="button.loadapi">
+				<source>Load Data</source>
+			</trans-unit>
+			<trans-unit id="button.back">
+				<source>Back</source>
+			</trans-unit>
+        </body>
+	</file>
+</xliff>

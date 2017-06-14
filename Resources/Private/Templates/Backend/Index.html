@@ -1,0 +1,15 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<f:if condition="{books -> f:count()}==0">
+    <f:then>
+        <div class="center">Füge ein Buch hinzu!</div>
+    </f:then>
+    <f:else>
+        <f:render partial="Table" arguments="{books: '{books}'}" />
+    </f:else>
+</f:if>
+
+<div class="neos-footer">
+    <neos:link.module class="neos-button neos-button-success" path="management/bookLibrary/add">
+        Buch hinzufügen
+    </neos:link.module>
+</div>

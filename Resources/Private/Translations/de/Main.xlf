@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="" product-name="JoRo.BookSearch" source-language="en" target-language="de">
+		<body>
+			<trans-unit id="module.description" xml:space="preserve">
+				<source>Manage Books in your Library</source>
+				<target>Verwaltung der Bücher in dieser Bücherei</target>
+			</trans-unit>
+			<trans-unit id="module.name" xml:space="preserve">
+				<source>Book Library</source>
+				<target>Bücherei</target>
+			</trans-unit>
+			<trans-unit id="headline.add" xml:space="preserve">
+				<source>Add Book</source>
+				<target>Buch hinzufügen</target>
+			</trans-unit>
+			<trans-unit id="headline.details">
+				<source>Book details</source>
+				<target>Buch Details</target>
+			</trans-unit>
+			<trans-unit id="headline.edit">
+				<source>Edit book</source>
+				<target>Buch bearbeiten</target>
+			</trans-unit>
+			<trans-unit id="label.isbn" xml:space="preserve">
+				<source>ISBN</source>
+				<target>ISBN</target>
+			</trans-unit>
+			<trans-unit id="label.title" xml:space="preserve">
+				<source>Title</source>
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="label.description" xml:space="preserve">
+				<source>Description</source>
+				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="label.author" xml:space="preserve">
+				<source>Author</source>
+				<target>Autor</target>
+			</trans-unit>
+			<trans-unit id="label.image" xml:space="preserve">
+				<source>Cover image</source>
+				<target>Bild</target>
+			</trans-unit>
+			<trans-unit id="label.language" xml:space="preserve">
+				<source>Language</source>
+				<target>Sprache</target>
+			</trans-unit>
+			<trans-unit id="label.categories" xml:space="preserve">
+				<source>Category</source>
+				<target>Kategorie</target>
+			</trans-unit>
+			<trans-unit id="label.pages">
+				<source>Pages total</source>
+				<target>Seitenzahl</target>
+			</trans-unit>
+			<trans-unit id="label.releasedate" xml:space="preserve">
+				<source>Release Date</source>
+				<target>Veröffentlicht am</target>
+			</trans-unit>
+			<trans-unit id="button.cancel" xml:space="preserve">
+				<source>Cancel</source>
+				<target>Abbrechen</target>
+			</trans-unit>
+	        <trans-unit id="button.create">
+                <source>Create</source>
+				<target>Erstellen</target>
+            </trans-unit>
+	        <trans-unit id="button.update">
+                <source>Update</source>
+				<target>Aktualisieren</target>
+            </trans-unit>
+	        <trans-unit id="button.loadapi">
+                <source>Load Data</source>
+				<target>Details laden</target>
+            </trans-unit>
+	        <trans-unit id="button.back">
+                <source>Back</source>
+				<target>Zurück</target>
+            </trans-unit>
+        </body>
+	</file>
+</xliff>
