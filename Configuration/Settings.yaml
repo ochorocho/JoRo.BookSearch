@@ -4,8 +4,6 @@ Neos:
       translation:
         autoInclude:
           'JoRo.BookSearch': ['*']
-      requireJsPathMapping:
-        Neos.Neos/Validation: 'resource://Neos.Neos/Public/JavaScript/Shared/Validation/'
     modules:
       management:
         submodules:
