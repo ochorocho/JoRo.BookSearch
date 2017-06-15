@@ -78,6 +78,10 @@
                 <source>Back</source>
 				<target>Zurück</target>
             </trans-unit>
+	        <trans-unit id="label.notfound">
+                <source>Request returned no result!</source>
+				<target>Kein Buch gefunden!</target>
+            </trans-unit>
         </body>
 	</file>
 </xliff>

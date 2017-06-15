@@ -4,6 +4,8 @@ Neos:
       translation:
         autoInclude:
           'JoRo.BookSearch': ['*']
+      requireJsPathMapping:
+        Neos.Neos/Validation: 'resource://Neos.Neos/Public/JavaScript/Shared/Validation/'
     modules:
       management:
         submodules:
@@ -18,6 +20,8 @@ Neos:
                 - 'resource://Neos.Neos/Public/Library/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js'
                 - 'resource://JoRo.BookSearch/Public/Javascripts/jquery-ui.min.js'
                 - 'resource://JoRo.BookSearch/Public/Javascripts/datepicker-de.js'
+                - 'resource://JoRo.BookSearch/Public/Javascripts/jquery.auto-complete.js'
                 - 'resource://JoRo.BookSearch/Public/Javascripts/loadBookDetails.js'
               styleSheets:
+              - 'resource://JoRo.BookSearch/Public/Styles/jquery.auto-complete.css'
               - 'resource://JoRo.BookSearch/Public/Styles/Style.css'

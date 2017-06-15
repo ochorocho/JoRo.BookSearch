@@ -6,6 +6,7 @@
         <f:render partial="BookForm" arguments="{language: '{language}', headline: 'headline.add'}" />
 
         <div class="neos-footer">
+            <f:render partial="SearchBox" />
             <neos:link.module class="neos-button neos-button-warning" path="management/bookLibrary">
                 <f:translate id="button.cancel" />
             </neos:link.module>
@@ -15,5 +16,4 @@
             <f:form.submit class="neos-button neos-button-success" value="{f:translate(id: 'button.create')}" />
         </div>
     </f:form>
-
 </div>

@@ -56,6 +56,9 @@
 			<trans-unit id="button.back">
 				<source>Back</source>
 			</trans-unit>
+			<trans-unit id="label.notfound">
+				<source>Request returned no result!</source>
+			</trans-unit>
         </body>
 	</file>
 </xliff>
