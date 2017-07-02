@@ -9,6 +9,8 @@ function loadBookToForm(url) {
         success: function(book){
             console.log(book);
             if(book != undefined) {
+                console.log(book.volumeInfo.industryIdentifiers[0].identifier);
+                $('#isbn').val(book.volumeInfo.industryIdentifiers[0].identifier);
                 $('#title').val(book.volumeInfo.title);
                 $('#author').val(book.volumeInfo.authors.join(', '));
                 $('#releasedate').val(book.volumeInfo.publishedDate);
