@@ -59,6 +59,12 @@
 			<trans-unit id="label.notfound">
 				<source>Request returned no result!</source>
 			</trans-unit>
+			<trans-unit id="label.averagerating">
+				<source>Average rating</source>
+			</trans-unit>
+			<trans-unit id="label.publisher">
+				<source>Publisher</source>
+			</trans-unit>
         </body>
 	</file>
 </xliff>

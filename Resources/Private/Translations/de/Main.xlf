@@ -82,6 +82,14 @@
                 <source>Request returned no result!</source>
 				<target>Kein Buch gefunden!</target>
             </trans-unit>
+	        <trans-unit id="label.averagerating">
+                <source>Average rating</source>
+				<target>Durchschnittliche Bewertung</target>
+            </trans-unit>
+	        <trans-unit id="label.publisher">
+                <source>Publisher</source>
+				<target>Verlag</target>
+            </trans-unit>
         </body>
 	</file>
 </xliff>
