@@ -64,11 +64,6 @@ class Book
     /**
      * @var string
      */
-    protected $teaser;
-
-    /**
-     * @var string
-     */
     protected $description;
 
     /**
@@ -223,22 +218,6 @@ class Book
     public function setPublisher($publisher)
     {
         $this->publisher = $publisher;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTeaser()
-    {
-        return $this->teaser;
-    }
-
-    /**
-     * @param string $teaser
-     */
-    public function setTeaser($teaser)
-    {
-        $this->teaser = $teaser;
     }
 
     /**

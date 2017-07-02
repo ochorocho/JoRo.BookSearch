@@ -1,28 +1,30 @@
 // Load book API response to form
-function loadBookToForm(filter, search) {
-    var query = filter + ':' + search;
+function loadBookToForm(url) {
     $.ajax({
         type: "GET",
         dataType: "jsonp",
         jsonpCallback: "handleResponse",
-        url: "https://www.googleapis.com/books/v1/volumes",
-        data: "q=" + query + "&callback=handleResponse",
-        success: function(msg){
-            if(msg.items != undefined) {
-                var book = msg.items[0].volumeInfo;
-                $('#title').val(book.title);
-                $('#author').val(book.authors.join(', '));
-                $('#releasedate').val(book.publishedDate);
-                $('#language').val(book.language);
-                $('#categories').val(book.categories);
-                $('#pages').val(book.pageCount);
-                $('#image-cover').val(book.imageLinks.thumbnail);
-                $('#publisher').val(book.publisher);
-                $('#description').val(book.description);
-                $('#teaser').val(msg.items[0].searchInfo.textSnippet);
-                $('#averagerating').val(book.averageRating);
+        url: url,
+        data: "callback=handleResponse",
+        success: function(book){
+            console.log(book);
+            if(book != undefined) {
+                $('#title').val(book.volumeInfo.title);
+                $('#author').val(book.volumeInfo.authors.join(', '));
+                $('#releasedate').val(book.volumeInfo.publishedDate);
+                $('#language').val(book.volumeInfo.language);
+                $('#categories').val(book.volumeInfo.categories.join(', '));
+                $('#pages').val(book.volumeInfo.pageCount);
+                $('#image-cover').val(book.volumeInfo.imageLinks.thumbnail);
+                $('#publisher').val(book.volumeInfo.publisher);
+                $('#description').val(book.volumeInfo.description);
+                if (book.volumeInfo.averageRating != undefined) {
+                    $('#averagerating').val(book.volumeInfo.averageRating);
+                } else {
+                    $('#averagerating').val('0');
+                }
             } else {
-                console.log('No books found for this isbn');
+                console.log('No book found ...');
             }
         },
         error: function (err) {
@@ -79,13 +81,15 @@ $(document).ready(function () {
             });
         },
         renderItem: function (item, search){
-            console.log(item,search);
-            var book = item.volumeInfo;
+            // console.log(item,search);
             $('#joro-search').removeClass('loading');
-            return '<div class="autocomplete-suggestion" data-val="' + book.title + '">' + book.title + '</div>';
+            return '<div class="autocomplete-suggestion" data-link="' + item.selfLink + '" data-val="' + item.volumeInfo.title + '">' + item.volumeInfo.title + '</div>';
         },
         onSelect: function(e, term, item){
             // trigger loadBookToForm
+            console.log(term);
+            console.log(item.attr('data-link'));
+            loadBookToForm(item.attr('data-link'));
         },
         menuClass: 'joro-search-suggest',
     });
