@@ -36,18 +36,19 @@ function loadBookToForm(url) {
 }
 
 // Wait for Ember to use its translations
+/*
 (function defer() {
     if (window.Ember) {
         Ember.Application.create({
             ready: function() {
-                console.log(Ember.I18n.translations.JoRo_BookSearch.Main.label_notfound);
+                // console.log(Ember.I18n.translations.JoRo_BookSearch.Main.label_notfound);
             }
         })
     } else {
         setTimeout(function() { defer() }, 50);
     }
 })();
-
+*/
 $(document).ready(function () {
 
     $('#joro-search input').autoComplete({
@@ -56,7 +57,7 @@ $(document).ready(function () {
             var filter = $('#joro-search select').val() + ':';
             var isbn = $('#joro-search input').val();
 
-            if(filter == 'all:') {
+            if(filter === 'all:') {
                 filter = '';
             }
 
