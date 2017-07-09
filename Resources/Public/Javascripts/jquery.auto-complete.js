@@ -59,7 +59,7 @@
             }
             $(window).on('resize.autocomplete', that.updateSC);
 
-            that.sc.appendTo('body');
+            that.sc.appendTo(o.appendTo);
 
             that.sc.on('mouseleave', '.autocomplete-suggestion', function (){
                 $('.autocomplete-suggestion.selected').removeClass('selected');
@@ -159,6 +159,7 @@
         minChars: 3,
         delay: 150,
         cache: 1,
+        appendTo: 'body',
         menuClass: '',
         renderItem: function (item, search){
             // escape special characters

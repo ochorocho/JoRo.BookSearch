@@ -1,17 +1,22 @@
 {namespace form=Neos\Form\ViewHelpers\Form}
 
-<div id="joro-search" class="joro-search pull-right">
-    <select class="attribute">
-        <option value="all">Search all</option>
-        <option value="isbn">ISBN</option>
-        <option value="author">Author</option>
-    </select>
-    <input class="term" placeholder="Search book details..." type="text">
-    <div class="joro-loader">
-        <div class="cssload-piano">
-            <div class="cssload-rect1"></div>
-            <div class="cssload-rect2"></div>
-            <div class="cssload-rect3"></div>
+
+<div id="joro-search" class="joro-search neos-row-fluid">
+    <div class="neos-span6">
+        <select class="attribute">
+            <option value="all">Search all</option>
+            <option value="isbn">ISBN</option>
+            <option value="author">Author</option>
+        </select>
+    </div>
+    <div class="neos-span6">
+        <input class="term" placeholder="Search book details..." type="text">
+        <div class="joro-loader">
+            <div class="cssload-piano">
+                <div class="cssload-rect1"></div>
+                <div class="cssload-rect2"></div>
+                <div class="cssload-rect3"></div>
+            </div>
         </div>
     </div>
 </div>

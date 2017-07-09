@@ -1,4 +1,4 @@
-.neos.neos-module table td.joro-longtext {
+.neos-module-management-bookLibrary table td.joro-longtext {
     line-height: 20px !important;
     padding: 10px 16px;
 }
@@ -44,11 +44,9 @@
 }
 
 .autocomplete-suggestions.joro-search-suggest {
-    right: 16px !important;
+    right: 0px !important;
     width: 326px !important;
-    position: fixed !important;
-    bottom: 71px !important;
-    top: unset !important;
+    top: 42px !important;
     left: unset !important;
     background: #141414;
     border: 1px solid #3f3f3f;
@@ -59,9 +57,14 @@
     bottom: auto !important;
     padding: 5px 10px;
     color: #ffffff;
+    font-size: 14px;
 }
 
 .joro-search-suggest .autocomplete-suggestion.selected { background: #3F3F3F; }
+
+.joro-search input, .joro-search select {
+    width: 100%;
+}
 
 .joro-loader {
     background-color: transparent;
@@ -70,6 +73,7 @@
     position: absolute;
     right: 0px;
     overflow: hidden;
+    top: 3px;
 }
 
 .joro-notfound {

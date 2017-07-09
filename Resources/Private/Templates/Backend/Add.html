@@ -1,12 +1,9 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 
 <div class="neos-content neos-container-fluid">
-
     <f:form class="book book-edit" action="create" id="bookForm" objectName="newBook" enctype="multipart/form-data">
         <f:render partial="BookForm" arguments="{language: '{language}', headline: 'headline.add'}" />
-
         <div class="neos-footer">
-            <f:render partial="SearchBox" />
             <neos:link.module class="neos-button neos-button-warning" path="management/bookLibrary">
                 <f:translate id="button.cancel" />
             </neos:link.module>

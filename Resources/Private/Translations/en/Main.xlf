@@ -14,6 +14,9 @@
 			<trans-unit id="headline.details">
 				<source>Book details</source>
 			</trans-unit>
+			<trans-unit id="headline.edit">
+				<source>Edit book</source>
+			</trans-unit>
 			<trans-unit id="label.isbn" xml:space="preserve">
 				<source>ISBN</source>
 			</trans-unit>
